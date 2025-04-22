@@ -1,4 +1,5 @@
-```
+![1745329086058](https://github.com/user-attachments/assets/586b2ac0-4f37-4c66-a3a9-19962530c0d5)
+
 # 🇵🇰 Pakistani Legal Advocate Assistant
 
 A fully terminal-based AI chatbot powered by LangChain and Gemini, trained on Pakistani legal texts including the Constitution, Penal Code, and major court rulings. The assistant provides formal legal guidance using only the provided data with proper legal citations.
