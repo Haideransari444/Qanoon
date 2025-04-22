@@ -1,0 +1,186 @@
+2025-04-21 15:00:07,416 - __main__ - INFO - Loading embeddings model...
+2025-04-21 15:00:16,921 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-21 15:00:16,922 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-21 15:00:21,309 - __main__ - INFO - Loading vector store...
+2025-04-21 15:00:21,319 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-21 15:00:21,481 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-21 15:00:21,494 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-21 15:00:24,093 - __main__ - INFO - Initializing language model...
+2025-04-21 15:00:24,162 - __main__ - INFO - Starting Pakistani Legal Assistant API
+2025-04-21 15:01:08,897 - __main__ - INFO - Processing question: law about dwoery
+2025-04-21 15:01:10,739 - __main__ - INFO - Got response from LLM, processing sources...
+2025-04-21 15:01:10,740 - __main__ - INFO - Extracted 0 sources from answer
+2025-04-21 15:01:10,740 - __main__ - INFO - Returning response with 0 sources
+2025-04-21 15:01:25,237 - __main__ - INFO - Processing question: law about dowery
+2025-04-21 15:01:26,977 - __main__ - INFO - Got response from LLM, processing sources...
+2025-04-21 15:01:26,978 - __main__ - INFO - Extracted 0 sources from answer
+2025-04-21 15:01:26,980 - __main__ - INFO - Returning response with 0 sources
+2025-04-21 15:01:59,320 - __main__ - INFO - Loading embeddings model...
+2025-04-21 15:02:06,476 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-21 15:02:06,476 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-21 15:02:09,973 - __main__ - INFO - Loading vector store...
+2025-04-21 15:02:09,978 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-21 15:02:10,141 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-21 15:02:10,150 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-21 15:02:10,972 - __main__ - INFO - Initializing language model...
+2025-04-21 15:02:11,028 - __main__ - INFO - Starting Pakistani Legal Assistant API
+2025-04-21 15:03:25,283 - __main__ - INFO - Processing question: law about dowery
+2025-04-21 15:03:27,341 - __main__ - INFO - Got response from LLM, processing sources...
+2025-04-21 15:03:27,342 - __main__ - INFO - Extracted 0 sources from answer
+2025-04-21 15:03:27,343 - __main__ - INFO - Returning response with 0 sources
+2025-04-22 16:33:46,233 - __main__ - INFO - Loading embeddings model...
+2025-04-22 16:33:56,962 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-22 16:33:56,962 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-22 16:34:01,656 - __main__ - INFO - Loading vector store...
+2025-04-22 16:34:01,663 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-22 16:34:01,837 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-22 16:34:01,846 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-22 16:34:05,374 - __main__ - INFO - Initializing language model...
+2025-04-22 16:34:07,135 - __main__ - INFO - Starting Pakistani Legal Assistant API
+2025-04-22 16:34:18,781 - __main__ - INFO - Processing question: hello
+2025-04-22 16:34:21,627 - __main__ - INFO - Got response from LLM, processing sources...
+2025-04-22 16:34:21,627 - __main__ - INFO - Extracted 0 sources from answer
+2025-04-22 16:34:21,627 - __main__ - INFO - Returning response with 0 sources
+2025-04-22 16:34:37,427 - __main__ - INFO - Processing question: what is the law about the dowery
+2025-04-22 16:34:39,043 - __main__ - INFO - Got response from LLM, processing sources...
+2025-04-22 16:34:39,043 - __main__ - INFO - Extracted 0 sources from answer
+2025-04-22 16:34:39,044 - __main__ - INFO - Returning response with 0 sources
+2025-04-22 16:34:57,945 - __main__ - INFO - Processing question: what is the law about the living creature to be kiled 
+2025-04-22 16:35:00,764 - __main__ - INFO - Got response from LLM, processing sources...
+2025-04-22 16:35:00,764 - __main__ - INFO - Extracted 1 sources from answer
+2025-04-22 16:35:00,766 - __main__ - ERROR - Error fetching source Code.pdf: 404: Document not found: Code.pdf
+Traceback (most recent call last):
+  File "e:\legeslative bot\BACKEND\api.py", line 205, in fetch_source_content
+    content = await get_document_text_async(source_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\legeslative bot\BACKEND\api.py", line 191, in get_document_text_async
+    raise e
+  File "e:\legeslative bot\BACKEND\api.py", line 189, in get_document_text_async
+    return await asyncio.to_thread(get_document_text, source_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haider\AppData\Local\Programs\Python\Python311\Lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haider\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\legeslative bot\BACKEND\api.py", line 171, in get_document_text
+    raise HTTPException(status_code=404, detail=f"Document not found: {source_id}")
+fastapi.exceptions.HTTPException: 404: Document not found: Code.pdf
+2025-04-22 16:35:01,936 - __main__ - INFO - Returning response with 1 sources
+2025-04-22 16:35:07,386 - __main__ - INFO - Retrieving document: Code.pdf
+2025-04-22 16:36:35,348 - __main__ - INFO - Processing question: what is the lawww
+2025-04-22 16:36:37,176 - __main__ - INFO - Got response from LLM, processing sources...
+2025-04-22 16:36:37,177 - __main__ - INFO - Extracted 0 sources from answer
+2025-04-22 16:36:37,177 - __main__ - INFO - Returning response with 0 sources
+2025-04-22 16:36:46,563 - __main__ - INFO - Processing question: Defination of the law
+2025-04-22 16:36:48,136 - __main__ - INFO - Got response from LLM, processing sources...
+2025-04-22 16:36:48,137 - __main__ - INFO - Extracted 0 sources from answer
+2025-04-22 16:36:48,137 - __main__ - INFO - Returning response with 0 sources
+2025-04-22 16:39:12,319 - __main__ - INFO - Loading embeddings model...
+2025-04-22 16:39:22,218 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-22 16:39:22,218 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-22 16:39:25,941 - __main__ - INFO - Loading vector store...
+2025-04-22 16:39:25,947 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-22 16:39:26,200 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-22 16:39:26,209 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-22 16:39:29,117 - __main__ - INFO - Initializing language model...
+2025-04-22 16:39:29,218 - __main__ - INFO - Starting Pakistani Legal Assistant API
+2025-04-22 16:40:41,500 - __main__ - INFO - Processing question: what is the law 
+2025-04-22 16:40:41,741 - __main__ - INFO - Retrieved 5 relevant sources
+2025-04-22 16:40:44,470 - __main__ - INFO - Got response from LLM
+2025-04-22 16:40:44,470 - __main__ - INFO - Returning response with 5 sources
+2025-04-22 16:40:48,717 - __main__ - INFO - Retrieving document: C.A_supreme (2653).txt
+2025-04-22 16:40:48,719 - __main__ - ERROR - HTTP error retrieving document: Invalid document ID format
+2025-04-22 16:41:36,034 - __main__ - INFO - Processing question: what is the law about the dowery
+2025-04-22 16:41:36,069 - __main__ - INFO - Retrieved 4 relevant sources
+2025-04-22 16:41:37,493 - __main__ - INFO - Got response from LLM
+2025-04-22 16:41:37,493 - __main__ - INFO - Returning response with 4 sources
+2025-04-22 16:41:48,467 - __main__ - INFO - Processing question: what is the law about going wild \
+2025-04-22 16:41:48,494 - __main__ - INFO - Retrieved 2 relevant sources
+2025-04-22 16:41:49,437 - __main__ - INFO - Got response from LLM
+2025-04-22 16:41:49,440 - __main__ - INFO - Returning response with 2 sources
+2025-04-22 16:42:00,906 - __main__ - INFO - Processing question: okay thanks \
+2025-04-22 16:42:00,934 - __main__ - INFO - Retrieved 5 relevant sources
+2025-04-22 16:42:01,720 - __main__ - INFO - Got response from LLM
+2025-04-22 16:42:01,720 - __main__ - INFO - Returning response with 5 sources
+2025-04-22 16:42:13,813 - __main__ - INFO - Processing question: set the temperature to 0.8
+2025-04-22 16:42:13,841 - __main__ - INFO - Retrieved 5 relevant sources
+2025-04-22 16:42:14,922 - __main__ - INFO - Got response from LLM
+2025-04-22 16:42:14,923 - __main__ - INFO - Returning response with 5 sources
+2025-04-22 16:47:19,488 - __main__ - INFO - Processing question: what is the law aout dowery 
+2025-04-22 16:47:19,523 - __main__ - INFO - Retrieved 4 relevant sources
+2025-04-22 16:47:21,280 - __main__ - INFO - Got response from LLM
+2025-04-22 16:47:21,282 - __main__ - INFO - Returning response with 4 sources
+2025-04-22 16:47:26,273 - __main__ - INFO - Retrieving document: 63ea176f52421_610.pdf
+2025-04-22 16:47:26,549 - __main__ - ERROR - HTTP error retrieving document: Document not found: 63ea176f52421_610.pdf
+2025-04-22 16:50:11,368 - __main__ - INFO - Processing question: what is the law about dowery 
+2025-04-22 16:50:11,393 - __main__ - INFO - Retrieved 3 relevant sources
+2025-04-22 16:50:13,056 - __main__ - INFO - Got response from LLM
+2025-04-22 16:50:13,056 - __main__ - INFO - Returning response with 3 sources
+2025-04-22 16:50:21,699 - __main__ - INFO - Retrieving document: C.A_supreme (1056).txt
+2025-04-22 16:50:21,700 - __main__ - ERROR - HTTP error retrieving document: Invalid document ID format
+2025-04-22 17:10:27,839 - __main__ - INFO - Processing question: what is the meaning of intellectual rights in pakistan 
+2025-04-22 17:10:27,877 - __main__ - INFO - Retrieved 4 relevant sources
+2025-04-22 17:10:29,114 - __main__ - INFO - Got response from LLM
+2025-04-22 17:10:29,114 - __main__ - INFO - Returning response with 4 sources
+2025-04-22 17:10:47,786 - __main__ - INFO - Processing question: what is freedom of speach by the defination in PPC 
+2025-04-22 17:10:47,814 - __main__ - INFO - Retrieved 5 relevant sources
+2025-04-22 17:10:49,057 - __main__ - INFO - Got response from LLM
+2025-04-22 17:10:49,058 - __main__ - INFO - Returning response with 5 sources
+2025-04-22 17:11:08,681 - __main__ - INFO - Processing question: what is the law about fredom of speach 
+2025-04-22 17:11:08,702 - __main__ - INFO - Retrieved 5 relevant sources
+2025-04-22 17:11:09,482 - __main__ - INFO - Got response from LLM
+2025-04-22 17:11:09,482 - __main__ - INFO - Returning response with 5 sources
+2025-04-22 17:11:18,737 - __main__ - INFO - Processing question: what is freedom od speach 
+2025-04-22 17:11:18,764 - __main__ - INFO - Retrieved 5 relevant sources
+2025-04-22 17:11:19,910 - __main__ - INFO - Got response from LLM
+2025-04-22 17:11:19,910 - __main__ - INFO - Returning response with 5 sources
+2025-04-22 17:13:14,195 - __main__ - INFO - Processing question: what is the law about the dowery 
+2025-04-22 17:13:14,223 - __main__ - INFO - Retrieved 4 relevant sources
+2025-04-22 17:13:15,880 - __main__ - INFO - Got response from LLM
+2025-04-22 17:13:15,880 - __main__ - INFO - Returning response with 4 sources
+2025-04-22 17:14:31,097 - __main__ - INFO - Processing question: What is the law about the marital rape 
+2025-04-22 17:14:31,129 - __main__ - INFO - Retrieved 3 relevant sources
+2025-04-22 17:14:32,526 - __main__ - INFO - Got response from LLM
+2025-04-22 17:14:32,526 - __main__ - INFO - Returning response with 3 sources
+2025-04-22 17:15:11,566 - __main__ - INFO - Processing question: What is the Definition of the Law Under the Constitution Of Pakistan
+2025-04-22 17:15:11,601 - __main__ - INFO - Retrieved 4 relevant sources
+2025-04-22 17:15:13,100 - __main__ - INFO - Got response from LLM
+2025-04-22 17:15:13,102 - __main__ - INFO - Returning response with 4 sources
+2025-04-22 17:15:39,268 - __main__ - INFO - Processing question: What is Section 302 PPC
+2025-04-22 17:15:39,296 - __main__ - INFO - Retrieved 3 relevant sources
+2025-04-22 17:15:41,506 - __main__ - INFO - Got response from LLM
+2025-04-22 17:15:41,507 - __main__ - INFO - Returning response with 3 sources
+2025-04-22 17:16:04,249 - __main__ - INFO - Processing question: What is punishment of Murder 
+2025-04-22 17:16:04,276 - __main__ - INFO - Retrieved 5 relevant sources
+2025-04-22 17:16:05,842 - __main__ - INFO - Got response from LLM
+2025-04-22 17:16:05,843 - __main__ - INFO - Returning response with 5 sources
+2025-04-22 17:16:46,394 - __main__ - INFO - Processing question: What is the Definition of the Law Under the Constitution Of Pakistan
+2025-04-22 17:16:46,426 - __main__ - INFO - Retrieved 4 relevant sources
+2025-04-22 17:16:47,999 - __main__ - INFO - Got response from LLM
+2025-04-22 17:16:48,000 - __main__ - INFO - Returning response with 4 sources
+2025-04-22 17:17:01,593 - __main__ - INFO - Processing question: What is the section 144 PPC?
+2025-04-22 17:17:01,621 - __main__ - INFO - Retrieved 4 relevant sources
+2025-04-22 17:17:02,752 - __main__ - INFO - Got response from LLM
+2025-04-22 17:17:02,752 - __main__ - INFO - Returning response with 4 sources
+2025-04-22 17:17:16,497 - __main__ - INFO - Processing question: What is the punnishment of murder 
+2025-04-22 17:17:16,524 - __main__ - INFO - Retrieved 4 relevant sources
+2025-04-22 17:17:18,022 - __main__ - INFO - Got response from LLM
+2025-04-22 17:17:18,022 - __main__ - INFO - Returning response with 4 sources
+2025-04-22 17:17:55,680 - __main__ - INFO - Processing question: What is the Definition of the Law Under the Constitution Of Pakistan
+2025-04-22 17:17:55,712 - __main__ - INFO - Retrieved 4 relevant sources
+2025-04-22 17:17:57,956 - __main__ - INFO - Got response from LLM
+2025-04-22 17:17:57,956 - __main__ - INFO - Returning response with 4 sources
+2025-04-22 17:18:16,696 - __main__ - INFO - Processing question: What is the Section 302?
+2025-04-22 17:18:16,723 - __main__ - INFO - Retrieved 3 relevant sources
+2025-04-22 17:18:19,437 - __main__ - INFO - Got response from LLM
+2025-04-22 17:18:19,438 - __main__ - INFO - Returning response with 3 sources
+2025-04-22 17:18:33,073 - __main__ - INFO - Processing question: What is the punnishment of murder 
+2025-04-22 17:18:33,100 - __main__ - INFO - Retrieved 4 relevant sources
+2025-04-22 17:18:34,508 - __main__ - INFO - Got response from LLM
+2025-04-22 17:18:34,508 - __main__ - INFO - Returning response with 4 sources
+2025-04-22 17:27:04,747 - __main__ - INFO - Processing question: what is the law about dowery
+2025-04-22 17:27:04,784 - __main__ - INFO - Retrieved 3 relevant sources
+2025-04-22 17:27:06,656 - __main__ - INFO - Got response from LLM
+2025-04-22 17:27:06,656 - __main__ - INFO - Returning response with 3 sources
